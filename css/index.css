@@ -1,0 +1,729 @@
+
+/*S Lesson3*/
+
+/*遮罩*/
+#lesson3 li{
+    width: 1300px;
+    box-shadow: 0px 0px 8px #999;
+}
+#lesson3 ul li span{
+    display: block;
+    padding: 10px;
+    width: 800px;
+    font-size: 24px;
+    color: #333;
+}
+#lesson3 ul li p{
+    padding: 10px;
+    font-size: 16px;
+    color: #333;
+    text-align: left;
+}
+#lesson3 .wrap{
+    height: 150px;
+    width: 100%;
+    text-align: center;
+    line-height: 150px;
+    font-size: 100px;
+    font-weight: bolder;
+    color: transparent;
+    background: url("../images/2.jpg") no-repeat 300px/cover;
+    -webkit-background-clip: text;
+    animation:run 5s infinite alternate;
+}
+@keyframes run{
+    0%{background-position:0 0; }
+
+    100%{background-position:-100px 0px; }
+
+}
+/*动画*/
+#lesson3 .wrap1{
+    height: 150px;
+    width: 100%;
+    text-align: center;
+    line-height: 150px;
+    font-size: 100px;
+    font-weight: bolder;
+    color: #333;
+}
+#lesson3 .wrap1 ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+#lesson3 .wrap1 li{
+    background-color: #333;
+}
+#lesson3 .wrap1 li:nth-child(1){
+    animation: mask1 4s infinite alternate;
+}
+@keyframes mask1{
+    0%,20%{ background-color: #333;}
+    21%,40%{background-color: transparent; }
+    41%,100%{background-color: #333; }
+}
+#lesson3 .wrap1 li:nth-child(2){
+    animation: mask2 4s infinite alternate;
+}
+@keyframes mask2{
+    0%,40%{background-color: #333; }
+    41%,60%{background-color: transparent; }
+    61%,100%{background-color: #333; }
+}
+#lesson3 .wrap1 li:nth-child(3){
+    animation: mask3 4s infinite alternate;
+}
+@keyframes mask3{
+    0%,60%{background-color: #333;}
+    61%,80%{background-color: transparent; }
+    81%,100%{background-color: #333; }
+}
+#lesson3 .wrap1 li:nth-child(4){
+    animation: mask4 4s infinite alternate;
+}
+@keyframes mask4{
+    0%,80%{background-color: #333; }
+    81%,100%{background-color: transparent; }
+}
+/*3d*/
+#lesson3 .wrap2{
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    line-height: 150px;
+    font-size: 50px;
+    font-weight: bolder;
+    perspective:800px;
+}
+#lesson3 .wrap2 ul{
+    position: relative;
+    height: 300px;
+    width: 300px;
+    margin: 20px auto;
+    transform-style:preserve-3d;
+    transform-origin: center center -150px;
+    animation:abc 5s infinite;
+
+}
+@keyframes abc{
+    100%{transform:rotateY(360deg)}
+    }
+
+
+#lesson3 .wrap2 ul li{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+}
+#lesson3 .wrap2 ul li:nth-child(1){
+    background:hsla(0,100%,70%,0.4);
+
+}
+#lesson3 .wrap2 ul li:nth-child(2){
+    background:hsla(60,100%,70%,0.8);
+    transform: translateZ(-150px);
+
+}
+#lesson3 .wrap2 ul li:nth-child(3){
+    background:hsla(120,100%,70%,0.8);
+    left: -150px;
+    transform-origin: right;
+    transform: rotateY(-90deg);
+}
+#lesson3 .wrap2 ul li:nth-child(4){
+    background:hsla(180,100%,70%,0.8);
+    left: 150px;
+    transform-origin: left;
+    transform: rotateY(90deg);
+}
+#lesson3 .wrap2 ul li:nth-child(5){
+    background:hsla(240,100%,70%,0.8);
+    top: -150px;
+    transform-origin: bottom;
+    transform: rotateX(90deg);
+}
+#lesson3 .wrap2 ul li:nth-child(6){
+    background:hsla(300,100%,70%,0.8);
+    top: 150px;
+    transform-origin: top;
+    transform: rotateX(-90deg);
+}
+
+/*E Lesson3*/
+/*S Lesson2*/
+#lesson2 .items_1_menu{
+    width: 220px;
+    height: 200px;
+    background-color: #188EEE;
+}
+.items_1_menu .tlt{
+    height: 20px;
+    line-height: 30px;
+    padding: 10px;
+    font-size: 16px ;
+    color: #ffffff;
+}
+.items_1_menu .tlt div{
+    width: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+.items_1_menu .tlt i{
+    height: 2px;
+    width: 15px;
+    background-color: #fff;
+    display: block;
+    margin: 5px;
+}
+.items_1_submenu{
+    background-color: #1681C4;
+    position: relative;
+}
+.items_1_submenu dl{
+    padding: 10px 10px;
+    border-bottom: 1px dashed #ccc;
+}
+.items_1_submenu dt{
+    font-size: 14px ;
+    color: #ffffff;
+    line-height: 30px;
+}
+.items_1_submenu dd a{
+    font-size: 12px ;
+    color: #ccc;
+    line-height: 30px;
+    margin-right: 20px;
+}
+.items_1_submenu  .none{
+    width: 1080px;
+    position: absolute;
+    top: 0;
+    left: 220px;
+    display: none;
+    transition: 5s;
+    z-index: 20;
+}
+.items_1_submenu  .no2{
+    background: pink;
+    display: none;
+}
+.items_1_submenu li:hover .none{
+    display: block;
+}
+/*广告位练习*/
+.dd1 header{
+    height: 50px;
+    position: relative;
+}
+.dd1 header p{
+    height: 30px;
+    border-bottom: 1px solid #ccc;
+}
+.dd1 header .tlt{
+    width: 200px;
+    height: 19px;
+    background: url("../images/demo5/1.jpg") no-repeat 0 /cover ;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    margin-left: -100px;
+}
+.dd1 .content{
+    width: 800px;
+    height: 430px;
+    margin: 20px auto;
+}
+.dd1 .content ul{
+    width: 400%;
+}
+.dd1 .content ul li{
+    width: 800px;
+    height: 100%;
+    position: relative;
+}
+.dd1 .content ul img{
+    width: 800px;
+
+}
+.dd1 .content .text_box{
+    width: 560px;
+    height: 60px;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    margin-left: -300px;
+    padding: 20px;
+    background:rgba(0,0,0,0.7);
+    color: #fff;
+}
+.dd1 .content .text_box p{
+    width:200px;
+    padding-right:20px;
+    height:100px;
+    font-size:24px;
+    padding-top:10px;
+}
+.dd1 .content .text_box span{
+    width:485px;
+    padding-left:20px;
+    border-left:1px solid #ccc;
+}
+.btnBar{
+    padding:10px;
+    text-align:center;
+}
+.btnBar a{
+    display:inline-block;
+    width:9px;
+    height:9px;
+    border-radius:50%;
+    background:#ddd;
+}
+.btnBar .current{
+    background:red;
+}
+.dd1 .content .trangle{
+    height: 70px;
+    width: 800px;
+    position: absolute;
+    top: 70%;
+}
+.dd1 .content .trangle a{
+    height: 70px;
+    width: 50px;
+    margin: 0;
+    background:url('../images/demo5/3.png') no-repeat ;
+}
+.dd1 .content .trangle a:hover{
+    background-color:rgba(0,0,0,0.7);
+}
+.dd1 .content .trangle .prew{
+    background-position:0 -77px;
+}
+.dd1 .content .trangle .next{
+    background-position:0 -150px;
+}
+/*CSS写tab栏*/
+.dd2{
+    width: 1100px;
+    height: 560px;
+}
+.dd2 ul{
+    width: 800px;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+}
+.dd2 ul li{
+    float: left;
+}
+.dd2 ul li label{
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: pink;
+    margin-right: 2px;
+}
+.dd2 ul .content{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 500px;
+    height: 300px;
+    background-color: #1681C4;
+    display: none;
+    color: #fff;
+    font-size: 18px;
+}
+.dd2 input:checked ~ div{
+    display: block;
+}
+/*锚点轮播*/
+.dd3{
+    width: 1100px;
+    height: 560px;
+}
+.dd3 .wrap{
+    width: 790px;
+    height: 340px;
+    padding: 10px;
+    margin: 10px auto;
+    background-color: #fff;
+    position: relative;
+}
+.dd3 .img{
+    width: 790px;
+    height: 340px;
+}
+.dd3 .img li{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.dd3 .btn{
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    margin-left: -30px;
+}
+.dd3 .btn li {
+    float: left;
+    margin-right: 5px;
+}
+.dd3 .btn li a{
+    display: block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: pink;
+}
+.dd3 .img li:target{
+    display: block;
+}
+.dd3 input:checked #img1{
+    display: block;
+}
+.dd3  .text_box{
+    margin: auto;
+    font-size: 20px;
+}
+
+
+/*E Lesson2*/
+/*S Lesson1*/
+
+#lesson1 .items:nth-child(1) h3{
+    color:#ff8400;
+    background:#eee;
+    border:1px solid #dbdee1;
+    font-size: 16px;
+    line-height: 30px;
+    padding-left: 15px;
+}
+#lesson1 .items:nth-child(1) ul{
+    padding: 5px 0 0 15px;
+    line-height: 30px;
+}
+#lesson1 .items:nth-child(1) span{
+    color:#ff8400;
+}
+
+#lesson1 .item .items:nth-child(1)::after{
+    content: attr(data-content);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    line-height: 400px;
+    color: transparent;
+    font: 800 18px/400px "simsong";
+    transition: 1s;
+}
+
+#lesson1 .item .items:nth-child(1):hover::after{
+    background-color: rgba(0,0,0,0.4);
+    color: #ccc;
+}
+#lesson1 .items:nth-child(2){
+    width: 260px;
+    height: 360px;
+    padding: 20px;
+}
+#lesson1 .items:nth-child(2) img{
+    height: 280px;
+    width: 260px;
+    margin-bottom: 20px;
+}
+#lesson1 .items:nth-child(2) p{
+    line-height: 30px;
+}
+
+#lesson1 .items:nth-child(3){
+    width: 260px;
+    height: 360px;
+    padding: 20px;
+}
+#lesson1 .items:nth-child(3) ul {
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    list-style: inside;
+}
+#lesson1 .item .items .ul{
+    list-style: circle;
+}
+#lesson1 .items:nth-child(3) li{
+    line-height: 30px;
+    border-bottom: 1px dotted #ccc;
+}
+
+#lesson1 .items:nth-child(4) .text_box{
+    padding: 20px 0 0 20px;
+}
+#lesson1 .text_box a{
+    font-size:18px;
+    color:#000;
+
+}
+#lesson1 .items:nth-child(4) .text_box p{
+    font-size:14px;
+    color:#64C333;
+    margin-top: 20px;
+}
+#lesson1 .items:nth-child(4) .text_box p:nth-of-type(3) {
+    text-indent:45px;
+    background: url('../images/demo4/body.png') no-repeat 0 0;
+}
+#lesson1 .items:nth-child(4) .img_box{
+
+    text-align: right;
+}
+#lesson1 .items:nth-child(4) .img_box img{
+    width: 200px;
+    height: 180px;
+}
+#lesson1 .items:nth-child(5) .tlt{
+    background:#eee;
+    font-size: 16px;
+    line-height: 40px;
+    padding-left: 15px;
+}
+#lesson1 .items:nth-child(5) img{
+    width: 300px;
+    height: 200px;
+}
+#lesson1 .items:nth-child(5) ul{
+    padding: 15px;
+}
+
+#lesson1 .items:nth-child(5) li{
+    line-height: 30px;
+}
+
+#lesson1 .items:nth-child(6){
+    width: 260px;
+    height: 400px;
+    padding: 0px 20px;
+}
+#lesson1 .items:nth-child(6) .menu{
+    border: 1px solid #C00606;
+
+}
+#lesson1 .menu h3{
+    background-color: #C00606;
+    line-height: 30px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+}
+#lesson1 .menu dl{
+    padding: 10px;
+
+}
+#lesson1 .menu dt{
+    background: url('../images/demo4/body.png') no-repeat 0 center;
+    padding-left: 26px;
+    line-height: 24px;
+    font-weight: 600;
+    line-height: 30px;
+}
+#lesson1 .menu dd{
+    line-height: 30px;
+    padding-left: 26px;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
+
+}
+#lesson1 .menu dd:last-child{
+    border-bottom: 1px dotted #919191;
+
+}
+#lesson1 .items:nth-child(7){
+    width: 260px;
+    height: 400px;
+    padding: 0px 20px;
+}
+#lesson1 .items:nth-child(7) a img{
+    width: 100%;
+    height: 100%;
+}
+#lesson1 .items:nth-child(7) li{
+    border: 1px solid #919191;
+    padding: 10px;
+}
+#lesson1 .items:nth-child(7) .tlt{
+    color:inherit;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    line-height:35px;
+    font-size: 14px;
+}
+#lesson1 .items:nth-child(7) .tlt:hover{
+    text-overflow:inherit;
+    overflow:visible;
+}
+#lesson1 .items:nth-child(7) li p{
+    line-height:20px;
+    margin-top: 5px;
+}
+#lesson1 .items:nth-child(7) li p span {
+    color:#ff0084;
+    font-weight:bold;
+}
+#lesson1 .items:nth-child(7).time{
+    margin:5px 0;
+}
+#lesson1 .items:nth-child(7) li p i{
+    color:#f30;margin-right:10px;
+}
+#lesson1 .items:nth-child(8) .wrap{
+    margin: 10px 100px;
+}
+#lesson1 .items:nth-child(8) ul{
+    border: 1px solid #FD6397;
+    width:60px;
+}
+#lesson1 .items:nth-child(8) li{
+    width: 60px;
+    height: 20px;
+    padding-top: 40px;
+    background: url('../images/bg.jpg') no-repeat 0 -2px;
+    text-align: center;
+}
+
+#lesson1 .items:nth-child(8) .tlt{
+    border: 1px solid #FD6397;
+    height:40px;
+    width: 40px;
+    background:#fe6397;
+    font-size:14px;
+    color:#fff;
+    font-family:"微软雅黑";
+    text-align:center;
+    padding:10px;
+    cursor: pointer;
+}
+#lesson1 .items:nth-child(8) li:hover{
+    background-position: -88px -2px;
+}
+
+#lesson1 .items:nth-child(9) ul{
+    margin: 15px;
+}
+#lesson1 .items:nth-child(9) li{
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0;
+}
+#lesson1 .items:nth-child(9) li div{
+    display: inline-block;
+    width: 150px;
+    vertical-align: middle;
+}
+#lesson1 .items:nth-child(9) img{
+    width: 90px;
+    height: 90px;
+    border: 3px solid #ccc;
+    border-radius: 50%;
+
+}
+
+#lesson1 .items:nth-child(10) .img{
+    width: 280px;
+    height: 280px;
+    border: 5px solid #ccc;
+    border-radius: 50%;
+    position: relative;
+}
+#lesson1 .items:nth-child(10) img{
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+}
+
+#lesson1 .items:nth-child(10) .img::after{
+    content: attr(data-content);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    line-height: 280px;
+    text-align: center;
+    position: absolute;
+    font-family: '微软雅黑';
+    font-size: 18px;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0);
+    z-index: -1;
+    
+}
+#lesson1 .items:nth-child(10) .img:hover::after{
+    background-color: rgba(0,0,0,0.7);
+    z-index: 10;
+}
+#lesson1 .items:nth-child(11){
+    width: 280px;
+    height: 380px;
+    background-color: #ccc;
+    padding: 10px;
+}
+#lesson1 .items:nth-child(11) .mask{
+    background-color: #fff;
+    width: 260px;
+    height: 360px;
+    padding: 10px;
+}
+#lesson1 .items:nth-child(11) .tlt{
+    height: 30px;
+    width: 260px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+#lesson1 .items:nth-child(11) span{
+    width: 150px;
+    height: 48px;
+    background: #fff;
+    display: block;
+    position:absolute;
+    left:50px;
+    top:5px;
+    font-size:26px;
+    font-family:"微软雅黑";
+    line-height:48px;
+    text-align:center;
+}
+#lesson1 .items:nth-child(11) ul{
+    padding-top: 30px;
+}
+#lesson1 .items:nth-child(11) ul li{
+    height: 30px;
+    line-height: 30px;
+    text-indent: 25px;
+    background: url('../images/bg.png') no-repeat 0 8px;
+
+}
+#lesson1 .items:nth-child(11) a{
+    transition: all 1s;
+}
+#lesson1 .items:nth-child(11) ul li:hover a{
+    margin-left: 10px;
+}
+/*E Lesson1*/
+
+/*S Lesson1*/
+/*S Lesson1*/
+/*S Lesson1*/
+/*S Lesson1*/
+/*S Lesson1*/
+/*S Lesson1*/
+/*S Lesson1*/
+/*S Lesson1*/
+/*S Lesson1*/
+/*S Lesson1*/
+/*S Lesson1*/

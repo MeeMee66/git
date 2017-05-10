@@ -1,0 +1,448 @@
+<!DOCtype html>					<!--声明文档类型 -->
+<html lang='EN'>				<!--根标签：lang规定翻译的语言-->
+<head>						<!--网页头部-->
+    <meta charset='UTF-8'/>	<!--规定字符编码：UTF-8国际编码-->
+    <meta name="Mee" content="">			<!--作者-->
+    <meta name="Practice" content="">		<!--关键词：给搜索引擎用的-->
+    <meta name="Come ON!" content="">	<!--网站概述：给搜索引擎用的-->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>静下心好好练习</title>
+<body>
+    <header>
+        <div class="w clearfix">
+            <ul>
+                <li><a href="#lesson1">第一章</a></li>
+                <li><a href="#lesson2">第二章</a></li>
+                <li><a href="#lesson3">第三章</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="w">
+        <section id="lesson3">
+            <header>
+                <h2>H5练习</h2>
+            </header>
+            <ul>
+                <li>
+                    <div class="tlt">
+                        <span>3d盒子</span>
+                        <p>
+                            用的是display fixed 的布局方式
+                            给每个li单独设置动画，将背景颜色与自体颜色一致 <br>
+                            动画时间一样，但是每个li的动画状态要单独设置
+                        </p>
+                    </div>
+                    <div class="wrap2">
+                        <ul>
+                            <li>前</li>
+                            <li>后</li>
+                            <li>左</li>
+                            <li>右</li>
+                            <li>上</li>
+                            <li>下</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="tlt">
+                        <span>动画</span>
+                        <p>
+                            用的是display fixed 的布局方式
+                           给每个li单独设置动画，将背景颜色与自体颜色一致 <br>
+                            动画时间一样，但是每个li的动画状态要单独设置
+                        </p>
+                    </div>
+                    <div class="wrap1">
+                        <ul>
+                            <li>动</li>
+                            <li>画</li>
+                            <li>效</li>
+                            <li>果</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="tlt">
+                        <span>background-clip:text</span>
+                        <p>
+                            1、兼容性不好-webkit-background-clip <br>
+                            2、这个是背景裁剪区域属性，由text开始向外。把字体设为透明。
+                            3、还有三个效果border-box、padding-box、content-box
+                            </p>
+                    </div>
+                    <div class="wrap">
+                        制造遮罩效果
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section id="lesson2">
+            <header>
+                <h2>综合布局</h2>
+            </header>
+            <div class="item">
+                <div class="items_1" >
+                    <div class="items_1_menu">
+                        <div class="tlt">
+                            <div>
+                                <i></i>
+                                <i></i>
+                                <i></i>
+                            </div>
+                            全部课程
+                        </div>
+                            <ul class="items_1_submenu clearfix">
+                                <li>
+                                    <dl>
+                                        <dt class="clearfix">
+                                            <span class="fl">大布局的说明文档</span>
+                                            <span class="fr">></span>
+                                        </dt>
+                                        <dd>
+                                            <a href="#">上</a>
+                                            <a href="#">下</a>
+                                        </dd>
+                                        <dd class="none no2">
+                                            <p>大盒子包上下两个</p>
+                                            <p>上盒子的横线是i转化成block</p>
+                                            <p>下面用ul>li>dl</p>
+                                            <p>现在这个盒子是放在最后一个dd里的</p>
+                                            <p>定位的时候跟ul定</p>
+                                            <p>用的是li的hover</p>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt class="clearfix">
+                                            <span class="fl">广告定位作业</span>
+                                            <span class="fr">></span>
+                                        </dt>
+                                        <dd>
+                                            <a href="#">会不会写完就死了</a><a href="#">加油</a>
+                                        </dd>
+                                        <!--广告位-->
+                                        <dd class="none dd1">
+                                            <header>
+                                                <p></p>
+                                                <div class="tlt"></div>
+                                            </header>
+                                            <div class="content">
+                                                <ul>
+                                                    <li>
+                                                        <img src="images/demo5/2.jpg" alt="">
+                                                        <div class="trangle">
+                                                            <a href="#" class="prew fl"></a>
+                                                            <a href="#" class="next fr"></a>
+                                                        </div>
+                                                        <div class="text_box">
+                                                            <p class="fl">布局</p>
+                                                            <span> header content btn </span><br>
+                                                            <span>content：ul>li>img+text+control 主要是定位</span><br>
+                                                            <span>还是不难，主要有耐心慢慢写</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class='btnBar'>
+                                                <a class='current' href='#'></a>
+                                                <a href='#'></a>
+                                                <a href='#'></a>
+                                                <a href='#'></a>
+                                            </div>
+
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt class="clearfix">
+                                            <span class="fl">用CSS写tab栏</span>
+                                            <span class="fr">></span>
+                                        </dt>
+                                        <dd>
+                                            <a href="#">竟然用的input</a><a href="#">加油</a>
+                                        </dd>
+                                        <!--CSS tab栏-->
+                                        <dd class="none dd2">
+                                            <ul>
+                                                <li>
+                                                    <label for="tab1">选项1</label>
+                                                    <input type="radio" name="tab" id="tab1" checked="">
+                                                    <div class="content">
+                                                        <p>2上面的选择框只能选一个，所有用的input标签，radio。记得要写相同的name不然无法单选</p>
+                                                        <p> label标签是包着input的，二者用for id 联系，点击label的时候就相当于点击了input</p>
+                                                        <p> 把单选框去掉，所以用的 input display：none</p>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <label for="tab2">选项2</label>
+                                                    <input type="radio" name="tab" id="tab2">
+                                                    <div class="content">2</div>
+                                                </li>
+                                                <li>
+                                                    <label for="tab3">选项3</label>
+                                                    <input type="radio" name="tab" id="tab3">
+                                                    <div class="content">3</div>
+                                                </li>
+                                            </ul>
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt class="clearfix">
+                                            <span class="fl">锚点轮播</span>
+                                            <span class="fr">></span>
+                                        </dt>
+                                        <dd>
+                                            <a href="#">锚点定位</a><a href="#">加油</a>
+                                        </dd>
+                                        <!--CSS tab栏-->
+                                        <dd class="none dd3">
+                                            <div class="wrap">
+                                                <input type="" checked>
+                                                <ul class="img">
+                                                    <li id="img1">
+                                                        <img src="images/demo6/1.jpg" alt="轮播" >
+                                                    </li>
+                                                    <li id="img2">
+                                                        <img src="images/demo6/2.jpg" alt="轮播" >
+                                                    </li>
+                                                    <li id="img3">
+                                                        <img src="images/demo6/3.jpg" alt="轮播" >
+                                                    </li>
+                                                    <li id="img4">
+                                                        <img src="images/demo6/4.jpg" alt="轮播" >
+                                                    </li>
+                                                </ul>
+                                                <ul class="btn">
+                                                    <li><a href="#img1"></a></li>
+                                                    <li><a href="#img2"></a></li>
+                                                    <li><a href="#img3"></a></li>
+                                                    <li><a href="#img4"></a></li>
+                                                </ul>
+                                            </div>
+                                            <div class="text_box">
+                                                考察的是:target选择器<br>
+                                                a href="#img1"<br>
+                                                点击 a 标签时 id为img1的元素被选择 从而给这个元素加样式 <br>
+
+                                                input type="" checked 在网页设置这个标签<br>
+                                                input:checked #img1{
+                                                display: block;
+                                                }
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <section id="lesson1">
+            <header>
+                <h2>基础练习</h2>
+            </header>
+            <div class="item clearfix">
+                <div class="items" data-content="transform1s,可以做推动效果">
+                    <h3>腾讯新闻</h3>
+                    <ul>
+                        <li>
+                           <a href="javascript:;"> <span>财经 |</span>
+                            债转股17年后再度启动 如何演绎旧瓶装新酒？</a>
+                        </li>
+                        <li>
+                        <a href='#' title='别克全新GL8:28.99万起 男子科目三考过后猝死'>
+                            <span>汽车 | </span>别克全新GL8:28.万起 男子科目三考过后猝死
+                        </a>
+                        </li>
+                        <li>
+                            <a href='#' title='Baby鹿晗被曝童年照 辣妈章子怡女神范儿白裙'>
+                                <span>时尚 | </span>Baby鹿晗被曝童年照 辣妈章子怡女神范儿白裙
+                            </a>
+                        </li>
+                        <li>
+                            <a href='#' title='广告:新浪签到拿好礼 广告:精选新闻app'>
+                                <span>热点 | </span>广告:新浪签到拿好礼 广告:精选新闻app
+                            </a>
+                        </li>
+                        <li>
+                            <a href='#' title='广告:教育公益APP 广告:指尖上娱乐圈'>
+                                <span>关注 | </span>广告:教育公益APP 广告:指尖上娱乐圈
+                            </a>
+                        </li>
+                        <li>
+                            <span>布局 | </span>
+                            内容一致性原则，标题和下面内容份数两块 <br>
+                            标题没有设置高，直接用了l-h <br>
+                            用了padding-left。块级元素padding很好用<br>
+                            下面的内容用 ul>li<br>
+                            下面要变颜色的字体用span装起来
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="items">
+                    <img src="images/1.png" alt="化妆品">
+                    <p><a href="javacript:;">【shaiya莹】水之密语靓彩</a></p>
+                    <p><a href="javacript:;">上面img，下面p</a></p>
+                </div>
+                <div class="items">
+                    <ul class="ul">
+                        <li>ul设置了边框</li>
+                        <li>注意这里的padding对前面的小圆点没用</li>
+                        <li>直接给li设置了下边框</li>
+                        <li>COACH与追梦女性</li>
+                    </ul>
+                    <ul>
+                        <li>蓝唇妆居然这么火？</li>
+                        <li>大牌画风为何突变？</li>
+                        <li>欧莱雅男士面膜</li>
+                        <li>list-style: inside;</li>
+                    </ul>
+                </div>
+                <div class="items">
+                    <div class="text_box">
+                        <a href="javascript:;">品牌岁末疯抢</a>
+                        <p>分期免息</p>
+                        <p>布局：上下两个盒子 <br>
+                            重点！！！下盒子用了text-align: right<br>
+                            不要舍不得用div
+                        </p>
+                        <p>这个地方前面要加小图标也可以用text-indent</p>
+                    </div>
+                    <div class="img_box">
+                        <img src="images/demo1/5.jpg" alt="" width="200" height="200">
+                    </div>
+
+                </div>
+                <div class="items">
+                    <div class="tlt">
+                        <a href="javascrip:;">鲜城</a>
+                        <a href="javascrip:;">美食</a>
+                        <a href="javascrip:;">休闲</a>
+                    </div>
+                    <div class="img">
+                        <img src="images/food.png" alt="食物">
+                    </div>
+                    <ul>
+                        <li>上中下 div*2+ul</li>
+                        <li>图片要直接设置高宽，控制他的盒子是没用的</li>
+                    </ul>
+                </div>
+                <div class="items">
+                    <div class="menu">
+                        <h3>全部产品</h3>
+                        <dl>
+                            <dt>这个是用dl>dt>dd做的</dt>
+                            <dd><a href="javascript:;"></a>图标用的背景图放在dt的padding里的</dd>
+                            <dd><a href="javascript:;"></a>高度没有设置死</dd>
+                            <dd><a href="javascript:;">text-overflow:ellipsis;</a></dd>
+                            <dd><a href="javascript:;"> white-space:nowrap;</a></dd>
+                            <dd><a href="javascript:;">overflow:hidden;</a></dd>
+                            <dd><a href="javascript:;">三个一起用</a></dd>
+                        </dl>
+                        <dl>
+                            <dt>统一给dt设置样式</dt>
+                            <dd><a href="javascript:;">最后的点线用了dd:last-child</a></dd>
+                            <dd><a href="javascript:;">没有用box的padding,标题会受影响</a></dd>
+                        </dl>
+                    </div>
+
+                </div>
+                <div class="items">
+                    <ul>
+                        <li>
+                            <a href="javascript:;"><img src="images/demo3/pic1.jpg" alt="xiao"></a>
+                            <p class="tlt">动画便利店X果壳网《西门子洗碗机》 by 动画便利店</p>
+                            <p><span>原创作品</span> 鼠标滑动会显示 </p>
+                            <p class='time'>3小时前上传</p>
+                            <p><i>1284 </i> 人气/ <i>11</i> 评论 / <i>47</i> 推荐</p>
+                            <img src='images/demo3/play.png'/>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="items">
+                    <div class="wrap">
+                        <div class="tlt">聚美首页</div>
+                        <ul>
+                            <li>
+                                <span>用背景</span>
+                            </li>
+                            <li>
+                                <span>padding</span>
+                            </li>
+                            <li>
+                                <span>hover</span>
+                            </li>
+                            <li>
+                                <span>变背景位置</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="items">
+                    <ul>
+                        <li>
+                            <img src="images/1.jpg" alt="">
+                            <div>
+                                <h4>tips</h4>
+                                <p> vertical-align</p>
+                                <p>inline-block状态下图片和文字不对齐.这个属性是针对所在行的基线对齐</p>
+                            </div>
+                        </li>
+                        <li><img src="images/1.jpg" alt="">
+                            <div>
+                                <h4>tips</h4>
+                                <p>类似的布局都用ul>li</p>
+                                <p>结构稳定性，内容一致性。</p>
+                            </div>
+                        </li>
+                        <li><img src="images/1.jpg" alt="">
+                            <div>
+                                <h4>tips</h4>
+                                <p>左边是图，右边是文字div</p>
+                                <p>标题文字和普通文字，语义化标签分开</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="items">
+                   <div class="img" data-content="伪类">
+                       <img src="images/2.jpg" alt="">
+                       <p>content: attr(data-content);</p>
+                   </div>
+
+                </div>
+                <div class="items">
+                    <div class="mask">
+                        <div class="tlt">
+                            <span>这个布局</span>
+                        </div>
+                        <ul>
+                            <li><a href="#">父盒子bg和pd 不是用的border</a></li>
+                            <li><a href="#">tlt的border-bottom</a></li>
+                            <li><a href="#">span定位在中间 block属性</a></li>
+                            <li><a href="#">ul padding-top挤下来的</a></li>
+                            <li><a href="#">li的text-indent和bg</a></li>
+                            <li><a href="#">注意bg的位置是针对li的</a></li>
+                            <li><a href="#">li里面是个a hover的时候margin-left变大</a></li>
+                            <li><a href="#">这个布局真的把我吓尿了，还是要好好学</a></li>
+                            <li><a href="#">结果看视频老师说没有什么技术含量。。</a></li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+
+
+</body>
+</html>
